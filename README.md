@@ -91,72 +91,13 @@ creative-agency-agents/
 ```
  
 Each agent is developed and tested in its own notebook, then converted to a `.py` file so the Planner can import it. Test cells are tagged `test` and removed during conversion, so importing an agent never triggers an API call.
- 
-## 🚀 Getting started
- 
-### 1. Clone
-```bash
-git clone https://github.com/<your-username>/creative-agency-agents.git
-cd creative-agency-agents
-```
- 
-### 2. Install
-```bash
-uv sync
-```
-or, with pip:
-```bash
-python -m venv .venv
-.venv\Scripts\activate          # Windows
-pip install -r requirements.txt
-```
- 
-### 3. Configure
-Copy `.env.example` to `.env` and fill in your values:
-```env
-OPENAI_API_KEY=sk-...
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-SMTP_USERNAME=your.email@gmail.com
-SMTP_PASSWORD=your-gmail-app-password
-EMAIL_TO=default.client@example.com
-```
-For Gmail, create an **App Password** (Google Account → Security → 2-Step Verification → App passwords). Your normal password will not work.
- 
-### 4. Build the agent modules
-```bash
-jupyter nbconvert --to script agent_0*.ipynb --TagRemovePreprocessor.remove_cell_tags=test
-```
- 
-### 5. Run
-Open `planner-agent.ipynb`, run all cells, and open the Gradio link.
- 
-## 💬 Example
- 
-**Message 1** (attach `samples/matcha_lane_cafe_company_profile.pdf`):
-> This is our new client, Matcha Lane Café. Please save their company profile.
- 
-**Message 2:**
-> Create a full campaign for Matcha Lane Café to promote their Sakura Season menu and bring more customers in on weekday afternoons. Send it to me@example.com.
- 
-**Notebook log:**
-```
-PLANNER: calling save_company_pdf
-RAG AGENT: vector db built with 12 chunks
-PLANNER: calling plan_creative_strategy
-STRATEGY AGENT: Planning for Matcha Lane Café - ...
-CREATIVE WRITER AGENT: saved outputs/..._scripts_....json and ....pdf
-POSTER CREATE AGENT: saved outputs/..._poster_....png
-ANIMATION AGENT: saved outputs/..._video_....mp4 (20s, 9.8 MB)
-PRODUCT MANAGER AGENT: Email sent with 3 attachments
-```
- 
+
 ## 📸 Demo
  
 <!-- Add your own screenshots and demo video link here -->
 | Chat | Poster | Video |
 |------|--------|-------|
-| ![chat](docs/chat.png) | ![poster](docs/poster.png) | [▶ Watch demo](https://www.linkedin.com/) |
+| ![chat](docs/chat.png) | ![poster](docs/poster.png) | [▶ Watch demo](docs/demo.mp4) |
  
 ## ⚠️ Notes
  
