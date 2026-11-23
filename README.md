@@ -174,13 +174,7 @@ PRODUCT MANAGER AGENT: Email sent with 3 attachments
 - [ ] **Parallel generation**: create the poster and scene stills at the same time
 - [ ] **Observability**: log each tool call's time and token cost
 - [ ] **MCP server**: expose the agents to other apps
- 
-## 🙏 Acknowledgements
- 
-This project was built as part of the **Certified Agentic AI Engineering** course led by **Noob Dev**. Thank you to **[Mr. Name]** for the guidance throughout the course.
- 
+      
 ## 👩‍💻 Author
  
 **Amanda**, Computing undergraduate, Lanka Nippon BizTech Institute (LNBTI), Sri Lanka
-[LinkedIn](https://www.linkedin.com/in/<your-profile>) · [GitHub](https://github.com/<your-username>)
- 
