@@ -1,0 +1,32 @@
+# Secrets - never commit
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Runtime data (client data and generated files)
+knowledge-base/
+vector_db/
+outputs/
+*.sqlite3
+*.db
+
+# Gradio
+.gradio/
+flagged/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
